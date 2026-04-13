@@ -11,3 +11,12 @@ if (menuToggle && nav) {
 if (year) {
   year.textContent = new Date().getFullYear();
 }
+
+const headshot = document.getElementById('headshot');
+const headshotFallback = document.getElementById('headshot-fallback');
+
+if (headshot && headshotFallback) {
+  headshot.addEventListener('error', () => {
+    headshotFallback.hidden = false;
+  });
+}

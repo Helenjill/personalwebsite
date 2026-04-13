@@ -20,29 +20,3 @@ if (headshot && headshotFallback) {
     headshotFallback.hidden = false;
   });
 }
-
-const headshotUpload = document.getElementById('headshot-upload');
-
-if (headshot && headshotUpload) {
-  const savedImage = localStorage.getItem('headshotDataUrl');
-  if (savedImage) {
-    headshot.src = savedImage;
-    if (headshotFallback) headshotFallback.hidden = true;
-  }
-
-  headshotUpload.addEventListener('change', (event) => {
-    const file = event.target.files && event.target.files[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = () => {
-      const dataUrl = reader.result;
-      if (typeof dataUrl === 'string') {
-        headshot.src = dataUrl;
-        localStorage.setItem('headshotDataUrl', dataUrl);
-        if (headshotFallback) headshotFallback.hidden = true;
-      }
-    };
-    reader.readAsDataURL(file);
-  });
-}

@@ -139,7 +139,13 @@ h2 {
   padding: 1rem;
   background: var(--white);
 }
-
+.headshot-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--line);
+}
 .headshot-placeholder {
   aspect-ratio: 4 / 5;
   border: 1px solid var(--line);

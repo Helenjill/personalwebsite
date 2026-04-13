@@ -139,32 +139,21 @@ h2 {
   padding: 1rem;
   background: var(--white);
 }
-
-
 .headshot-photo {
   width: 100%;
-  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
   display: block;
   border: 1px solid var(--line);
 }
-
-.headshot-fallback {
-  margin-top: 0.6rem;
+.headshot-placeholder {
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--blue) 0%, var(--green-soft) 100%);
+  display: grid;
+  place-items: center;
   color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.upload-label {
-  display: inline-block;
-  margin-top: 0.6rem;
-  margin-right: 0.5rem;
   font-weight: 600;
-}
-
-#headshot-upload {
-  display: inline-block;
-  font-family: "Times New Roman", Times, serif;
-  margin-top: 0.4rem;
 }
 
 .card-grid {

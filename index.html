@@ -7,13 +7,13 @@
       name="description"
       content="Jill Rice | Tulane University student studying Psychology and Homeland Security."
     />
-    <title>Jill Rice | Personal Website</title>
+    <title> Jill Rice | Personal Website</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a href="#home" class="logo">Jill Rice</a>
+        <a href="#home" class="logo"> Jill Rice</a>
         <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         <nav class="site-nav">
           <a href="#about">About</a>
@@ -30,7 +30,7 @@
       <section id="home" class="hero section">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Jill Rice | Tulane University | New Orleans, LA</p>
+            <p class="eyebrow">Tulane University | New Orleans, LA</p>
             <h1>
               Confident, mission-driven student in <span>Psychology</span> and
               <span>Homeland Security</span>
@@ -46,19 +46,14 @@
               <a class="button button-outline" href="#resume">View Resume</a>
             </div>
           </div>
-          <figure class="headshot-card" aria-label="Professional headshot">
+          <figure aria-label="Professional headshot">
             <img
               id="headshot"
               class="headshot-photo"
-              src="images/HelenRiceHeadshot.JPG"
-              alt="Jill Rice professional headshot"
+              src="headshot.jpg"
+              alt="Helen Jill Rice professional headshot"
             />
-            <figcaption id="headshot-fallback" class="headshot-fallback" hidden>
-              Photo not found. Confirm your file exists at
-              <strong>images/HelenRiceHeadshot.JPG</strong> in your GitHub repo.
-            </figcaption>
           </figure>
-        </div>
       </section>
 
       <section id="about" class="section">
@@ -206,7 +201,6 @@
           </p>
         </div>
       </section>
-
       <section id="contact" class="section alt-bg">
         <div class="container">
           <h2>Contact</h2>
@@ -214,31 +208,27 @@
           <ul class="contact-list">
             <li>Email: <a href="mailto:helenjillrice@gmail.com">helenjillrice@gmail.com</a></li>
             <li>Phone: <a href="tel:+19136451903">913-645-1903</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/helen-rice-90b60129b/" target="_blank" rel="noreferrer">helen-rice-90b60129b</a></li>
-            <li>GitHub: <a href="https://github.com/Helenjill" target="_blank" rel="noreferrer">github.com/Helenjill</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/helen-rice-90b60129b" target="_blank" rel="noreferrer">helen-rice-90b60129b</a></li>
             <li>Location: New Orleans, LA</li>
           </ul>
-          <form id="contact-form" class="contact-form">
-            <h3>Send a Message</h3>
-            <p class="formspree-note">This form opens your email app with your message pre-filled.</p>
-            <label for="contact-name">Name</label>
-            <input id="contact-name" name="name" type="text" required />
-
-            <label for="contact-email">Email</label>
-            <input id="contact-email" name="email" type="email" required />
-
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" name="message" rows="5" required></textarea>
-
-            <button class="button" type="submit">Send</button>
-          </form>
+            <form action="https://formspree.io/f/YOURFORMID" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
         </div>
       </section>
+  
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <p>© <span id="year"></span> Jill Rice. Built for internship and professional opportunities. Connect on <a href="https://github.com/Helenjill" target="_blank" rel="noreferrer">GitHub</a></p>
+        <p>© <span id="year"></span> Helen Jill Rice. Built for internship and professional opportunities.</p>
+        <p>&copy; 2026 Jill Rice</p>
+        <p>
+          <a href="https://github.com/Helenjill" target="_blank">GitHub</a>
+        </p>
       </div>
     </footer>
 

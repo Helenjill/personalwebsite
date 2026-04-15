@@ -139,21 +139,22 @@ h2 {
   padding: 1rem;
   background: var(--white);
 }
-
-
 .headshot-photo {
   width: 100%;
-  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
   display: block;
   border: 1px solid var(--line);
 }
-
-.headshot-fallback {
-  margin-top: 0.6rem;
+.headshot-placeholder {
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--blue) 0%, var(--green-soft) 100%);
+  display: grid;
+  place-items: center;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-weight: 600;
 }
-
 
 .card-grid {
   display: grid;
@@ -239,44 +240,53 @@ h2 {
     padding: 0.8rem;
     flex-direction: column;
   }
-
-  .site-nav.open {
-    display: flex;
-  }
+  .contact-section {
+  padding: 60px 20px;
+  text-align: center;
 }
 
+.contact-section h2 {
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  margin-bottom: 25px;
+}
 
 .contact-form {
-  margin-top: 1.2rem;
-  border: 1px solid var(--line);
-  padding: 1rem;
-  display: grid;
-  gap: 0.55rem;
-  max-width: 640px;
-  background: var(--white);
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  border: 1px solid var(--line);
-  padding: 0.55rem;
-  font-family: "Times New Roman", Times, serif;
-  color: var(--text);
-  background: var(--white);
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
 }
 
 .contact-form button {
-  justify-self: start;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-
-.formspree-note {
-  margin: 0 0 0.4rem 0;
-  color: var(--muted);
-  font-size: 0.92rem;
+.contact-form button:hover {
+  transform: translateY(-2px);
 }
 
-.site-footer a {
-  color: var(--blue-deep);
+  .site-nav.open {
+    display: flex;
+  }
 }

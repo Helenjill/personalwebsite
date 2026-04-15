@@ -240,6 +240,51 @@ h2 {
     padding: 0.8rem;
     flex-direction: column;
   }
+  .contact-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+}
 
   .site-nav.open {
     display: flex;
